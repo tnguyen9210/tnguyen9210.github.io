@@ -1,0 +1,178 @@
+/*******************************************************************************
+ * Styles for the base elements of the theme.
+ ******************************************************************************/
+
+// Typography
+
+// html
+// {
+// 	font-family: Hack;
+// 	font-size: 100%;
+// }
+
+// p, em, div, span {
+// 	color: var(--global-text-color);
+// 	font-family: Hack;
+// }
+
+// h1, h2, h3, h4, h5, h6, strong {
+// 	color: var(--global-text-color);
+// 	font-family: Hack;
+// 	font-weight: 600;
+// }
+
+p, h1, h2, h3, h4, h5, h6, em, div, span, strong {
+	color: var(--global-text-color);
+	// font-family: Sans-serif;
+	font-family: Hack;
+}
+
+p.post-description {
+	margin-bottom: 1.5em;
+	margin-left: 0.5em;
+	font-size: 8px;
+	a {
+		color: inherit;
+		&:hover {
+			color: var(--global-theme-color);
+			text-decoration: none;
+		}
+	}
+}
+
+a, table.table a {
+	color: var(--global-theme-color);
+	&:hover {
+		color: var(--global-theme-color);
+		text-decoration: underline;
+	}
+	&:hover:after {
+		width: 100%;
+	}
+}
+
+.container {
+	max-width: $max-content-width;
+}
+
+body {
+	color: var(--global-text-color);
+	background-color: var(--global-bg-color);
+	// padding-bottom: 0;
+}
+
+
+body.fixed-top-nav {
+	// Add some padding for the nav-bar.
+	padding-top: 2em;
+}
+
+body.sticky-bottom-footer {
+	// Remove padding below footer.
+	padding-bottom: 0;
+}
+
+
+// Math
+.equation {
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+// Caption
+
+.caption {
+	font-size: 0.875em;
+	margin-top: 0.75em;
+	margin-bottom: 1.5em;
+	text-align: center;
+}
+
+// Citation
+.citation, .citation-number {
+	color: var(--global-theme-color);
+}
+
+
+
+
+// Distill
+.distill {
+	a:hover {
+		border-bottom-color: var(--global-theme-color);
+		text-decoration: none;
+	}
+}
+
+
+// Projects
+
+.projects {
+	.grid-item {
+		width: 250px;
+		margin-bottom: 10px;
+		a {
+			color: black;
+			text-decoration: none;
+			&:hover {
+				color: var(--global-theme-color);
+			}
+		}
+	}
+	.card { 
+		img {
+			width: 100%;
+		}
+		.card-title {
+			color: $black-color;
+		}
+	}
+}
+
+
+// News
+
+.news table td {
+	font-size: 1em;
+	color: var(--global-text-color);
+}
+
+.news table th {
+	color: var(--global-text-color);
+}
+
+// Rouge Color Customization
+figure.highlight {
+	margin: 0 0 1em;
+}
+
+pre {
+	color: var(--global-theme-color);
+	background-color: var(--global-code-bg-color);
+	border-radius: 6px;
+	padding: 6px 12px;
+	white-space: pre-wrap;
+    word-break: break-word; /*this stops the word breaking*/
+	pre, code {
+		background-color: transparent;
+		border-radius: 0;
+		padding: 0;
+	}
+}
+
+code {
+	color: var(--global-theme-color);
+	background-color: var(--global-code-bg-color);
+	border-radius: 3px;
+	padding: 3px 3px;
+}
+
+
+// Transitioning Themes
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+	transition: all 750ms !important;
+	transition-delay: 0 !important;
+}

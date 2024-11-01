@@ -1,0 +1,154 @@
+
+// Profile
+.profile {
+	margin: 0;
+	// margin-left: 1em;
+	// margin-right: 1em;
+	// width: 100%;
+
+	.address {
+		margin-bottom: 5px;
+		margin-top: 5px;
+		font-family: monospace;
+		font-size: 1.2em;
+		p {
+			display: inline-block;
+			margin: 0;
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.profile {
+		width: 30%;
+		.address {
+			p { display: block; }
+		}
+	}
+}
+
+.social-icons {
+	margin-top: 0.75em;
+	margin-bottom: 0em;
+}
+
+.social-icons li {
+	display: inline-block;
+}
+
+.social-icons a {
+	display: inline-block;
+	margin-right: 0.25em;	
+	text-indent: -9999px;
+}
+
+.mailto {
+	background-image: url(../img/iconfinder/iconfinder_mailto.png);
+	background-size: 25px;
+	width: 25px;
+	height: 25px;
+}
+.scholar {
+	background-image: url(../img/iconfinder/iconfinder_scholar.png);
+	background-size: 25px;
+	width: 25px;
+	height: 25px;
+}
+.github {
+	background-image: url(../img/iconfinder/iconfinder_github.png);
+	background-size: 25px;
+	width: 25px;
+	height: 25px;
+}
+.linkedin {
+	background-image: url(../img/iconfinder/iconfinder_linkedin.png);
+	background-size: 25px;
+	width: 25px;
+	height: 25px;
+}
+.twitter {
+	background-image: url(../img/iconfinder/iconfinder_twitter.png);
+	background-size: 25px;
+	width: 25px;
+	height: 25px;
+}
+.zotero {
+	background-image: url(../img/iconfinder/iconfinder_zotero.png);
+	background-size: 25px;
+	width: 25px;
+	height: 25px;
+}
+
+.c_lang {
+	background-image: url(../img/iconfinder/iconfinder_c_lang.png);
+	background-size: 25px;
+	width: 25px;
+	height: 25px;
+}
+
+.cpp_lang {
+	background-image: url(../img/iconfinder/iconfinder_cpp_lang.png);
+	background-size: 25px;
+	width: 25px;
+	height: 25px;
+}
+
+.python {
+	background-image: url(../img/iconfinder/iconfinder_python.png);
+	background-size: 25px;
+	width: 25px;
+	height: 25px;
+}
+
+.emacs {
+	background-image: url(../img/iconfinder/iconfinder_emacs.png);
+	background-size: 25px;
+	width: 25px;
+	height: 25px;
+}
+
+.archlinux {
+	background-image: url(../img/iconfinder/iconfinder_archlinux.png);
+	background-size: 25px;
+	width: 25px;
+	height: 25px;
+}
+
+.liverpoolfc {
+	background-image: url(../img/iconfinder/iconfinder_liverpoolfc.png);
+	background-size: 25px;
+	width: 25px;
+	height: 25px;
+}
+
+.soccer {
+	background-image: url(../img/iconfinder/iconfinder_soccer.png);
+	background-size: 25px;
+	width: 25px;
+	height: 25px;
+}
+
+.tennis {
+	background-image: url(../img/iconfinder/iconfinder_tennis.png);
+	background-size: 25px;
+	width: 25px;
+	height: 25px;
+	background-position: center;
+}
+
+.running {
+	background-image: url(../img/iconfinder/iconfinder_running.png);
+	background-size: 25px;
+	width: 25px;
+	height: 25px;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+.biking {
+	background-image: url(../img/iconfinder/iconfinder_biking.png);
+	background-size: 25px;
+	width: 25px;
+	height: 25px;
+	background-repeat: no-repeat;
+}
