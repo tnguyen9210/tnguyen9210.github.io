@@ -6,6 +6,7 @@
   booktitle = {Proceedings of the {{EMNLP}} 2021},
   author = {Nguyen, Minh Van and Nguyen, Tuan Ngo and Min, Bonan and Nguyen, Thien Huu},
   year = {2021},
+  url = {https://aclanthology.org/2021.emnlp-main.440/}
   abstract = {Previous work on crosslingual Relation and Event Extraction (REE) suffers from the monolingual bias issue due to the training of models on only the source language data. An approach to overcome this issue is to use unlabeled data in the target language to aid the alignment of crosslingual representations, i.e., via fooling a language discriminator. However, as this approach does not condition on class information, a target language example of a class could be incorrectly aligned to a source language example of a different class. To address this issue, we propose a novel crosslingual alignment method that leverages class information of REE tasks for representation learning. In particular, we propose to learn two versions of representation vectors for each class in an REE task based on either source or target language examples. Representation vectors for corresponding classes will then be aligned to achieve class-aware alignment for crosslingual representations. In addition, we propose to further align representation vectors for language universal word categories (i.e., parts of speech and dependency relations). As such, a novel filtering mechanism is presented to facilitate the learning of word category representations from contextualized representations on input texts based on adversarial learning. We conduct extensive crosslingual experiments with English, Chinese, and Arabic over REE tasks. The results demonstrate the benefits of the proposed method that significantly advances the state-of-the-art performance in these settings.},
   selected = {true}
 }
@@ -17,7 +18,7 @@
   year = {2021},
   url = {https://aclanthology.org/2021.textgraphs-1.4},
   abstract = {This paper studies the problem of cross-document event coreference resolution (CDECR) that seeks to determine if event mentions across multiple documents refer to the same real-world events. Prior work has demonstrated the benefits of the predicate-argument information and document context for resolving the coreference of event mentions. However, such information has not been captured effectively in prior work for CDECR. To address these limitations, we propose a novel deep learning model for CDECR that introduces hierarchical graph convolutional neural networks (GCN) to jointly resolve entity and event mentions. As such, sentence-level GCNs enable the encoding of important context words for event mentions and their arguments while the document-level GCN leverages the interaction structures of event mentions and arguments to compute document representations to perform CDECR. Extensive experiments are conducted to demonstrate the effectiveness of the proposed model.},
-  selected = {true}
+  selected = {false}
 }
 
 @inproceedings{lai2020event,
@@ -57,5 +58,5 @@
   year = {2019},
   url = {https://arxiv.org/abs/1911.01055},
   abstract = {Deep learning models have achieved state-of-the-art performances on many relation extraction datasets. A common element in these deep learning models involves the pooling mechanisms where a sequence of hidden vectors is aggregated to generate a single representation vector, serving as the features to perform prediction for RE. Unfortunately, the models in the literature tend to employ different strategies to perform pooling for RE, leading to the challenge to determine the best pooling mechanism for this problem, especially in the biomedical domain. In order to answer this question, in this work, we conduct a comprehensive study to evaluate the effectiveness of different pooling mechanisms for the deep learning models in biomedical RE. The experimental results suggest that dependency-based pooling is the best pooling strategy for RE in the biomedical domain, yielding the state-of-the-art performance on two benchmark datasets for this problem.},
-  selected = {true}
+  selected = {false}
 }
