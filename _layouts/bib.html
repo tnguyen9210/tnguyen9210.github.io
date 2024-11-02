@@ -32,6 +32,20 @@
             {% else %}
               {{author.first}} {{author.last}}
             {% endif %}
+		  {% else if forloop.length == 2 %}
+            {% unless forloop.last %}
+              {% if author_is_self %}
+              <em>{{author.first}} {{author.last}}</em>,
+              {% else %}
+              {{author.first}} {{author.last}}
+              {% endif %}
+            {% else %}
+              {% if author_is_self %}
+                and <em>{{author.first}} {{author.last}}</em>
+              {% else %}
+                and {{author.first}} {{author.last}}
+              {% endif %}
+            {% endunless %}
           {% else %}
             {% unless forloop.last %}
               {% if author_is_self %}
