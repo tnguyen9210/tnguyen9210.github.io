@@ -26,13 +26,13 @@
             {% endif %}
           {% endif %}
 
-          {% if forloop.length == 1 %}
-            {% if author_is_self %}
-              <em>{{author.first}} {{author.last}} {{entry.author_array.length}}</em>
-            {% else %}
-              {{author.first}} {{author.last}} {{entry.author_array.length}}
-            {% endif %}
-		  {% else if entry.author_array.length == 2 %}
+          <!-- {% if forloop.length == 1 %} -->
+          <!--   {% if author_is_self %} -->
+          <!--     <em>{{author.first}} {{author.last}}</em> -->
+          <!--   {% else %} -->
+          <!--     {{author.first}} {{author.last}} -->
+          <!--   {% endif %} -->
+		  {% if forloop.length == 2 %}
             {% unless forloop.last %}
               {% if author_is_self %}
               <em>{{author.first}} {{author.last}}</em>
@@ -41,15 +41,15 @@
               {% endif %}
             {% else %}
               {% if author_is_self %}
-                and <em>{{author.first}} {{author.last}} {{entry.author_array.length}} {{forloop.length}}</em>
+                and <em>{{author.first}} {{author.last}}</em>
               {% else %}
-                and {{author.first}} {{author.last}} {{entry.author_array.length}}
+                and {{author.first}} {{author.last}}
               {% endif %}
             {% endunless %}
           {% else %}
             {% unless forloop.last %}
               {% if author_is_self %}
-              <em>{{author.first}} {{author.last}} {{entry.author_array.length}}</em>,
+              <em>{{author.first}} {{author.last}}</em>,
               {% else %}
               {{author.first}} {{author.last}},
               {% endif %}
@@ -57,7 +57,7 @@
               {% if author_is_self %}
                 and <em>{{author.first}} {{author.last}}</em>
               {% else %}
-                and {{author.first}} {{author.last}} {{entry.author_array.length}}
+                and {{author.first}} {{author.last}}
               {% endif %}
             {% endunless %}
           {% endif %}
