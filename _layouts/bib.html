@@ -26,12 +26,6 @@
             {% endif %}
           {% endif %}
 
-          <!-- {% if forloop.length == 1 %} -->
-          <!--   {% if author_is_self %} -->
-          <!--     <em>{{author.first}} {{author.last}}</em> -->
-          <!--   {% else %} -->
-          <!--     {{author.first}} {{author.last}} -->
-          <!--   {% endif %} -->
 		  {% if forloop.length == 2 %}
             {% unless forloop.last %}
               {% if author_is_self %}
