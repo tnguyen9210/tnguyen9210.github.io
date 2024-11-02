@@ -32,7 +32,7 @@
             {% else %}
               {{author.first}} {{author.last}}
             {% endif %}
-		  {% else if forloop.length == 2 %}
+		  {% else if entry.author_array.length == 2 %}
             {% unless forloop.last %}
               {% if author_is_self %}
               <em>{{author.first}} {{author.last}}</em>
