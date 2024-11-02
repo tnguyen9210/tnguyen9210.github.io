@@ -16,7 +16,7 @@
     {% if entry.type == "thesis" %}
       {{reference}}
     {% else %}
-      <span class="title">{{entry.title}}</span>
+      <span class="title">{{entry.title}}</span>.
       <div class="author">
         {% for author in entry.author_array %}
           {% assign author_is_self = false %}
@@ -35,9 +35,9 @@
               {% endif %}
             {% else %}
               {% if author_is_self %}
-                and <em>{{author.first}} {{author.last}}</em>
+                and <em>{{author.first}} {{author.last}}</em>.
               {% else %}
-                and {{author.first}} {{author.last}}
+                and {{author.first}} {{author.last}}.
               {% endif %}
             {% endunless %}
           {% else %}
@@ -49,9 +49,9 @@
               {% endif %}
             {% else %}
               {% if author_is_self %}
-                and <em>{{author.first}} {{author.last}}</em>
+                and <em>{{author.first}} {{author.last}}</em>.
               {% else %}
-                and {{author.first}} {{author.last}}
+                and {{author.first}} {{author.last}}.
               {% endif %}
             {% endunless %}
           {% endif %}
@@ -60,9 +60,9 @@
 
       <div class="periodical">
       {% if entry.type == "article" %}
-        <em>{{entry.journal}}</em>
+        <em>{{entry.journal}}</em>.
       {% elsif entry.type == "inproceedings" %}
-        <em>In {{entry.booktitle}}</em>
+        <em>In {{entry.booktitle}}</em>.
       {% endif %}
       <!-- {% if entry.year %} -->
       <!--   {{entry.year}} -->
